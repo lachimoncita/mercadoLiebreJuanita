@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/657e1de652.js" crossorigin="anonymous"></script>
+    <title> Registro </title>
+</head>
+
+<body>
+    <!--------------------- HEADER REGISTER --------------------->
+    
+    <!--------------------- MAIN REGISTER --------------------->
+
+    <form action="/register" method="POST">
+        
+        <div class="container">
+
+          <h1>Registro</h1>
+          <hr>
+
+            <p>
+                <label for="nombre_y_apellido"><b> </b></label>
+                <input type="text" placeholder="Nombre y apellido" name="nombre_y_apellido" id="nombre_y_apellido" required>
+            </p>
+
+            <p>
+                <label for="nombre_de_usuario"><b> </b></label>
+                <input type="text" placeholder="Nombre de usuari@" name="nombre_de_usuario" id="nombre_de_usuario" required>
+            </p>
+
+            <p>
+                <label for="fecha_de_nacimiento"> Fecha de nacimiento: </label>
+                <input type="date" name="fecha_de_nacimiento" id="fecha_de_nacimiento">
+            </p>
+
+            <p>
+                <label for="domicilio"><b> </b></label>
+                <input type="text" placeholder="Domicilio" name="domicilio" id="domicilio">
+            </p>
+
+            <p>
+                <label><b> Perfil del usuario </b></label>
+                
+                <label for="perfil_comprador"> Comprador </label>
+                <input type="radio" name="perfil_del_usuario" id="perfil_comprador" value="Comprador" checked>
+
+                <label for="perfil_vendedor"> Vendedor </label>
+                <input type="radio" name="perfil_del_usuario" id="perfil_vendedor" value="Vendedor">
+            </p>
+
+            <p>
+                <label><b> Intereses </b></label>
+                
+                <label for="electro"> Electro </label>
+                <input type="checkbox" name="intereses_usuario" id="electro" value="electro" checked>
+
+                <label for="moda"> Moda </label>
+                <input type="checkbox" name="intereses_usuario" id="moda" value="moda">
+
+                <label for="hogar"> Hogar </label>
+                <input type="checkbox" name="intereses_usuario" id="hogar" value="hogar">
+
+                <label for="jugueteria"> Juguetería </label>
+                <input type="checkbox" name="intereses_usuario" id="jugueteria" value="jugueteria">
+
+                <label for="vida_sana"> Vida sana </label>
+                <input type="checkbox" name="intereses_usuario" id="vida_sana" value="vida_sana">
+
+            </p>
+
+            <p>
+                <label for="foto_de_perfil"><b> Foto de perfil </b></label>
+                <input type="file" placeholder="..." name="foto_de_perfil" id="foto_de_perfil" accept=".jpg, .jpeg, .pdf, .png" multiple >
+            </p>
+
+            <p>
+                <label for="psw"> </label>
+                <input type="password" placeholder="Contraseña..." name="psw" id="psw" required>
+            </p>
+        
+            <p>
+                <label for="psw-repeat"></label>
+                <input type="password" placeholder="Repetir contraseña..." name="psw-repeat" id="psw-repeat" required>
+            </p>
+    
+            <p> 
+                Creandote una cuenta estás aceptando los 
+                <a href="#">Términos & Condiciones</a>
+            </p>
+
+            <button type="submit" class="registerbtn"> Registrarme </button>
+
+            <button type="reset" class="resetbtn"> Reiniciar </button>
+        
+        </div>
+      
+        <div class="container_sign_in">
+
+            <p>
+                ¿Ya tenías una cuenta? 
+                <a href="/views/login.html"> Ingresá </a>
+            </p>
+
+        </div>
+
+    </form>
+
+    <!--------------------- FOOTER REGISTER --------------------->
+
+</body>
+
+</html>
