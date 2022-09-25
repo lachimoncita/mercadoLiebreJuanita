@@ -1,6 +1,6 @@
 /********************************* HOME.HTML ******************************/
 
-body{
+body {
     font-family: Roboto;
     color:#03264C;
     width: 100vw;
@@ -159,8 +159,6 @@ body{
 /*********************** MAIN ***********************/
 
 #main_mercado_liebre{
-    background-color: #EAC926;
-    margin:auto;
     width: 100%;
     height: 90%;
     display: flex;
@@ -181,8 +179,6 @@ body{
 }
 
 #img_banner{
-    display: flex;
-    box-sizing: border-box;
     width: 100%;
     height: 100%;
 }
@@ -196,7 +192,7 @@ body{
     box-sizing: border-box;
     width:100%;
     height: 60%;
-    padding: 25px 45px;
+    padding: 3% 2.5%;
 }
 
 #ultima_vista_titulo{
@@ -206,7 +202,7 @@ body{
     box-sizing: border-box;
     width:100%;
     height:10%;
-    font-size: 24px;
+    font-size: 22px;
     color:#666;
     font-weight: lighter;
     opacity: 0.9;
@@ -230,15 +226,12 @@ body{
     align-items: center;
     width: 22%;
     height: 100%;
-    border-radius: 5%;
     margin: 10px;
+    border-radius: 5%;
 }
 
 .img_productos_main {
     display:flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-end;
     width:100%;
     height:50%;
     box-sizing: border-box;
@@ -249,7 +242,7 @@ body{
 
 .descripcion_productos_main {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: flex-start;
     box-sizing: border-box;
@@ -260,6 +253,7 @@ body{
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
     position: relative;
+    padding-left: 10px;
 }
 
 .renglon_precio_descuento{
@@ -288,7 +282,19 @@ body{
 }
 
 .icono_de_envio:hover{
-    transform: rotate(90);
+    animation: rotar_camion_envio 3s linear infinite alternate;
+}
+
+@keyframes rotar_camion_envio {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-90deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
 }
 
 .tipogPreciosMain {
@@ -326,7 +332,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: white;
-    padding: 20px 0px;
+    margin: 20px 0px;
 }
 
     /***** Section 1 del Footer *****/
@@ -346,8 +352,9 @@ body{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
     box-sizing: border-box;
-    width: 30%;
+    width: 33.33%;
     height: 100%;
     background-color: white; 
 }
@@ -356,17 +363,18 @@ body{
     box-sizing: border-box;
     width:15%; /*en la consigna decía 2em, pero quedaban muy chiquitos*/
     height:15%; /*en la consigna decía 2em, pero quedaban muy chiquitos*/
-    margin-bottom: 1px;
+    padding-bottom: 1px;
     color: #125ac3;
+    text-align: center;
 }
 
 .titulosFooter{
-    font-size:1.2em;
+    font-size:1em;
     text-align: center;
     color:#666;
     font-weight: bold;
     width:100%;
-    height: 35%;
+    height:35%;
 }
 
 .txtFooter{
@@ -375,7 +383,7 @@ body{
     color: #666;
     font-weight: lighter;
     width:100%;
-    height: 50%;
+    height: 100%;
 }
     
     /***** Section 2 del Footer *****/
@@ -388,6 +396,7 @@ body{
     width: 100%;
     height: 20%;
     background-color: white;
+    padding-left: 5px;
 }
 
 #copyrightFooter{
@@ -398,11 +407,49 @@ body{
 
 /********************************* REGISTER.HTML ******************************/
 
+#main_registro{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #ebebeb;
+    width: 100%;
+    height: 90vh;
+}
+
 /********************************* LOGIN.HTML ******************************/
+
+#formulario_login{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+    width: 100vw;
+    height: 50vh;
+}
+
+#nombre_de_usuario{
+    display:flex;
+    box-sizing: border-box;
+    width:50vw;
+    height: 5vh;
+    border-radius: 5%;
+}
+
+#psw{
+    display:flex;
+    box-sizing: border-box;
+    width:50vw;
+    height: 5vh;
+}
 
 #btn_submit_login:hover{
     background-color: #0022AA;
+    transition: background-color 2s;
+    color: white;
 }
+
 
 /******************************************* MEDIA QUERIES *******************************************/
 

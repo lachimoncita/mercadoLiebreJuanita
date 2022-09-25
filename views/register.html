@@ -71,12 +71,11 @@
     
     <!--------------------- MAIN REGISTER --------------------->
 
-    <form action="/register" method="POST">
+    <form action=" " method="POST">
         
-        <div class="container">
+        <div id="main_registro">
 
-          <h1>Registro</h1>
-          <hr>
+            <p>Registro</p>
 
             <p>
                 <label for="nombre_y_apellido"><b> </b></label>
@@ -143,18 +142,12 @@
                 <input type="password" placeholder="Repetir contraseña..." name="psw-repeat" id="psw-repeat" required>
             </p>
 
-            <button type="submit" class="registerbtn"> Registrarme </button>
-
-            <button type="reset" class="resetbtn"> Reiniciar </button>
-        
-        </div>
-      
-        <div class="container_sign_in">
-
             <p>
-                ¿Ya tenías una cuenta? 
-                <a href="/views/login.html"> Ingresá </a>
+            <button type="submit" class="registerbtn"> <a href="/"> Enviar </a> </button>
+            <button type="reset" class="resetbtn"> Reiniciar </button>
             </p>
+
+            <p> ¿Ya tenías una cuenta? <a href="/views/login.html"> Ingresá </a> </p>
 
         </div>
 
