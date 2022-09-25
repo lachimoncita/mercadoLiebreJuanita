@@ -411,10 +411,10 @@ body {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background-color: #ebebeb;
     width: 100%;
-    height: 90vh;
+    height: 100%;
 }
 
 /********************************* LOGIN.HTML ******************************/
@@ -434,7 +434,6 @@ body {
     box-sizing: border-box;
     width:50vw;
     height: 5vh;
-    border-radius: 5%;
 }
 
 #psw{
