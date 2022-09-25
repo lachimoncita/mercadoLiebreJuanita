@@ -20,6 +20,6 @@ app.get("/views/login.html", (req,res) => {
     }
 );
 
-app.listen(3005, () => console.log("Servidor corriendo"));
+app.listen(process.env.PORT || 3005, () => console.log("Servidor corriendo"));
 
 
